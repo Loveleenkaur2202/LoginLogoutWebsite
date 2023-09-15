@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en">
+<head>
+<!-- loveleen kaur
+     Description: top
+	 Date: 2022-12-02                  -->
+  <title>Top Page</title>
+<style type="text/css">
+ body{ background-color:#599CFF; }
+ table{ background-color:#599CFF; }
+ h1{ color:blue; }
+ #buttonAlign {	padding-left:25px; }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+	
+</script>
+
+  <script type="text/javascript" src="JS/login.js"></script>
+  
+</head>
+
+<body onload="load()">
+ <table width="100%">
+   <tr>
+    <td> <img src="imgs/geography_ball_300.jpg" title="Hello" alt="logo" width="100"/> </td>
+    <td align="center"> <h1>GeoWild</h1> </td>
+    <td align="right"> 
+	<form name="form1">
+	 <table>
+	  <tr>
+	   <td class="login">User    :</td>
+	   <td class="login"><input type="text" name="firstname" id="user"/>&nbsp;&nbsp;</td>
+	   <td class="login"><input type="button" id="b1" onClick="authenticate_login()" value="Login" /></td>
+	  </tr>
+	  <tr>
+	    <td colspan="3" class="logout"><span id="uname"></span></td>
+	  </tr>
+      <tr>
+       <td class="login">Password:</td>
+	   <td class="login"><input type="password" name="pwd" id="pwd"/>&nbsp;&nbsp;</td>
+	   <td class="logout"><input type="button" id="b2" onClick="authenticate_logout()" value="Logout" /></td>
+	  <tr>
+     <br />
+	 </form>
+    </td>
+   </tr>
+</table>
+</body>
+
+</html>

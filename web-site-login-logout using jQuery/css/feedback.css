@@ -1,0 +1,29 @@
+input,textarea
+            {
+                border-radius: 3px;
+            }
+            #login
+            {
+                background-color:lightcyan;
+            }
+            #feedback
+            {
+                background-color:lightcyan;
+            }
+           
+            #user
+            {
+                background-color: lightcyan;
+            }
+            #submit
+            {
+                background-color: lightpink;
+            }
+            fieldset{
+                border-radius: 5px;
+                /*
+                -webkit-shadow: 10px 10px 5px #888;
+                box-shadow: 10px 10px 5px #888;
+                */
+            }
+        

@@ -1,0 +1,145 @@
+<!--Name : LOVELEEN KAUR
+    Date : dec 5 2022
+    Desc : Forms
+-->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Forms</title>
+        <link rel="stylesheet" href="../css/feedback.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+	
+        </script>
+        <script type="text/javascript">
+
+function setCookies(cname,cvalue,nbrSec){
+                var d = new Date();
+                d.setTime(d.getTime()+ (nbrSec*1000));
+                var expires = "expires="+d.toUTCString();
+                document.cookie = cname + "=" + cvalue + "; " + expires;
+        
+                //alert(document.cookie);
+            }
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) == 0) return unescape(c.substring(name.length, c.length));
+    };
+    result = "";
+    
+}
+function deleteCookie(cname){
+	//alert('before ' +getCookie('cookieTime'));
+    setCookies(cname,"",-1);
+	//alert('after ' + getCookie('cookieTime'));
+
+}
+
+   function displayValues(){
+    let ac = getCookie("cookieTime").split("|");
+    if(ac.length > 0){
+      alert("time spend:"+ac[0]);
+    }else{
+      alert("No time - no cookie\nEmpty cookie!");
+    }
+   }
+</script>
+<script type = "text/javascript">
+    let t1,t2;
+    function getT1(){
+        var date1 = new Date();
+        t1 = date1.getTime();
+
+    }
+    function diffT2fromT1(){
+        var date2 = new Date();
+		let result = 0;
+        t2 = date2.getTime();
+
+        
+            let timespan = t2-t1;
+            result = (timespan/1000);
+            alert("the time spend on this page is " +result.toString() + " sec.");
+            setCookies("cookieTime",result,15);
+			
+            getT1()
+        
+        return result();
+    }
+    </script>
+        
+    </head>
+    <body onload="getT1()"> 
+        <form action= "nextpage.php" method="post">
+            <fieldset id="login">
+                <legend>Login</legend>
+                Username: 
+                <input type="text" name="username" value="username" size="25" maxlength="10"/> <br /><br/>
+                Password: 
+                <input type="password" name="password" size="25" maxlength="10" /> <br /><br />
+                Email: 
+                <input type="email" name="email" size="25" maxlength="100" /> <br /><br />
+                
+            </fieldset>
+            <br/><br />
+            
+           
+            <fieldset id="user">
+                <legend>User Information</legend>
+                Address 1:
+                <input type="text" name="address1" value="Street" size="35" maxlength="30" /> <br /> <br />
+                Address 2:
+                <input type="text" name="address2" value="Street" size="35" maxlength="30" /> <br /> <br />
+                City:     
+                <input type="text" name="city" value="City" size="25" maxlength="25" /> <br /> <br />
+                <label for="states">State-Province:</label>
+                <input list="state" name="states" id="states">
+                <datalist id="state">
+                    <option value="Alberta">
+                    <option value="British Columbia">
+                    <option value="Manitoba">
+                    <option value="New Brunswick">
+                    <option value="Newfoundland and Labrador">
+                    <option value="Northwest Territories">
+                    <option value="Nova Scotia">
+                    <option value="Nunavut">
+                    <option value="Ontario">
+                    <option value="Prince Edward Island">
+                    <option value="Quebec">
+                    <option value="Saskatchewan">
+                    <option value="Yukon">
+                </datalist><br /><br />
+                Country:
+                <select>
+                    <option selected="selected">Canada</option>
+                    <option>USA</option>
+                    <option>Mexico</option>
+                </select>
+            </fieldset>
+            <br/><br/>
+            <fieldset id="feedback">
+                <legend>Feedback</legend>
+                Discription:
+                <textarea name="discription" rows ="20" cols="35"></textarea>
+            </fieldset><br /><br />
+            <fieldset id="submit">
+                <legend>Submit</legend>
+                <input type="button" value="Submit" onclick="diffT2fromT1()" />
+                
+                <input type="reset" />
+                <!---<input type="button" value = "check time" onclick="diffT2fromT1();" />   -->
+                <input type="button" value="Display cookie" onclick="displayValues();" />
+				<input type="button" value = "delete cookie" onclick="deleteCookie('cookieTime');" />
+            </fieldset>
+
+           
+        </form>
+    </body>
+</html>

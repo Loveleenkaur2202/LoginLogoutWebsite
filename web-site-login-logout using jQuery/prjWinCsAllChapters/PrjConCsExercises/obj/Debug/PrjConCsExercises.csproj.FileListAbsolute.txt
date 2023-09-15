@@ -1,0 +1,8 @@
+C:\Users\lovel\source\repos\lasalle\fall 2022\420-CT2-AS\prjWinCsAllChapters\PrjConCsExercises\bin\Debug\PrjConCsExercises.exe.config
+C:\Users\lovel\source\repos\lasalle\fall 2022\420-CT2-AS\prjWinCsAllChapters\PrjConCsExercises\bin\Debug\PrjConCsExercises.exe
+C:\Users\lovel\source\repos\lasalle\fall 2022\420-CT2-AS\prjWinCsAllChapters\PrjConCsExercises\bin\Debug\PrjConCsExercises.pdb
+C:\Users\lovel\source\repos\lasalle\fall 2022\420-CT2-AS\prjWinCsAllChapters\PrjConCsExercises\obj\Debug\PrjConCsExercises.csproj.AssemblyReference.cache
+C:\Users\lovel\source\repos\lasalle\fall 2022\420-CT2-AS\prjWinCsAllChapters\PrjConCsExercises\obj\Debug\PrjConCsExercises.csproj.SuggestedBindingRedirects.cache
+C:\Users\lovel\source\repos\lasalle\fall 2022\420-CT2-AS\prjWinCsAllChapters\PrjConCsExercises\obj\Debug\PrjConCsExercises.csproj.CoreCompileInputs.cache
+C:\Users\lovel\source\repos\lasalle\fall 2022\420-CT2-AS\prjWinCsAllChapters\PrjConCsExercises\obj\Debug\PrjConCsExercises.exe
+C:\Users\lovel\source\repos\lasalle\fall 2022\420-CT2-AS\prjWinCsAllChapters\PrjConCsExercises\obj\Debug\PrjConCsExercises.pdb

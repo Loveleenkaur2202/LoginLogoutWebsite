@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html >
+ <head>
+      <!-- Loveleen,Kaur
+     Description: Search
+	 Date: 2022-12-04                -->
+   <meta charset="UTF-8">
+   <title>Continents</title>
+   <link rel="stylesheet" type="text/css" href="../css/mystyle4.css"/>
+   
+   <script type="text/javascript">
+	
+    function setContinent(ContinentName)
+	{
+	  document.getElementById("CName").value = ContinentName;
+	  checkContinent();
+	}
+
+    function checkContinent()
+	{
+	  
+	  var arrNames = ["north america","south america","europe","africa","asia","australia"];
+	  var arrDis = ["52.7 °F","86 °F","37°F to 70°F","37-68°F","62°F to 81°F","51.8 - 73.4°F"];
+	  var arrDiscription = ["Area: 24,709,000 sq km , population: 592,296,233",
+							"Area: 17,840,000 sq km , population: 434,254,119",
+							"Area: 10,180,000 sq km , population: 745,173,774",
+							"Area: 30,370,000 sq km , population: 1,393,676,444",
+							"Area: 44,579,000 sq km , population: 4,694,576,167 ",
+							"Area: 7,617,930 sq km , population: 26,009,800 "
+						];
+	  var arrImgs = ["../Imgs/north.jpg", "../Imgs/south.jpg", "../Imgs/europe.jpg","../Imgs/africa.jpg","../Imgs/asia.jpg","../Imgs/aust.jpg"];
+	  
+      var result, nContinent, imgContinent;
+	  nContinent = document.getElementById("CName").value.toLowerCase();
+	  
+	  var index = -1;
+	  
+        for (var i = 0; i < arrNames.length; i++) //using loop for the search
+	  {
+	    if (arrNames[i] == nContinent)
+		{
+          index = i;
+          result = "Continent: "+arrNames[index].toUpperCase()+
+			       " having average daily temperature of: "+arrDis[index]+
+                   " and "+arrDiscription[index];
+		  imgContinent = arrImgs[index];		  
+		}
+	  }
+	
+	  
+	  if (index == -1)  //no planet name was found
+	  {
+		result = "Continent: inexistent having temperature of: 0 F and 0 sq km area and 0 population!";
+		imgPlanet = "../imgs/none.jpg";
+		alert('No such Continent exist! \nTry using something like europe, asia etc');
+	  }
+	  
+	  
+	
+		document.getElementById("Res").innerHTML = result;
+		document.getElementById("Rimg").src = imgContinent;	  
+	}
+
+
+</script>
+ </head>
+ <body id="top" >
+ 	<h1>Continents</h1>
+ 	<div class="cont1" style="width:95%; border:1px solid red">
+ 		<div class="cont1">
+			<img src="../Imgs/map.jpg" width="320" height="160" alt = "world Map" usemap="#map" />
+			 <map name="map">
+				<area shape="poly" coords="48,89,67,69,77,49,140,0,68,0,6,10,4,31,16,69" 
+				  href="#" alt="North America"  onclick="setContinent('North America');" />
+				<area shape="poly" coords="48,88,61,74,119,99,95,160,66,159" 
+				href="#"  alt="South America"  onclick="setContinent('South America');" />
+				<area shape="poly" coords="124,49,145,46,158,50,187,43,198,6,146,1,115,21" 
+				href="#" alt="Europe"  onclick="setContinent('Europe');" />
+				<area shape="poly" coords="121,53,140,47,169,51,186,77,196,80,188,137,156,136,138,97,118,86" 
+				href="#" alt="Africa"  onclick="setContinent('Africa');" />
+				<area shape="poly" coords="166,50,184,77,201,74,215,91,258,108,263,87,283,74,297,8,192,3,191,29,187,46,170,42" 
+				href="#" alt="Asia"  onclick="setContinent('Asia');" />
+				<area shape="poly" coords="257,107,263,85,314,89,316,137,294,151,249,132,248,114" 
+				href="#" alt="Australia"  onclick="setContinent('Australia');" />
+			  
+			</map>
+		</div>
+		<div class="cont1" style="width:95%; border:1px solid blue">
+			<form action="server_side.asp" method="post">
+				Enter the name of the continent: <input type="text" value="Continent name" id="CName" />
+				<input type="button" value="Look up Continent" onclick="checkContinent();" />
+				<p>Details: <span id="Res">?</span></p>
+				<img src="../Imgs/none.jpg" alt="image place" id="Rimg" />
+			</form>
+		</div>
+	</div>
+   
+	
+
+
+</body>
+</html>
