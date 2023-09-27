@@ -1,8 +1,0 @@
-C:\Users\lovel\source\repos\lasalle\fall 2022\420-CT2-AS\prjWinCsAllChapters\PrjConCsExercise2\bin\Debug\PrjConCsExercise2.exe.config
-C:\Users\lovel\source\repos\lasalle\fall 2022\420-CT2-AS\prjWinCsAllChapters\PrjConCsExercise2\bin\Debug\PrjConCsExercise2.exe
-C:\Users\lovel\source\repos\lasalle\fall 2022\420-CT2-AS\prjWinCsAllChapters\PrjConCsExercise2\bin\Debug\PrjConCsExercise2.pdb
-C:\Users\lovel\source\repos\lasalle\fall 2022\420-CT2-AS\prjWinCsAllChapters\PrjConCsExercise2\obj\Debug\PrjConCsExercise2.csproj.AssemblyReference.cache
-C:\Users\lovel\source\repos\lasalle\fall 2022\420-CT2-AS\prjWinCsAllChapters\PrjConCsExercise2\obj\Debug\PrjConCsExercise2.csproj.SuggestedBindingRedirects.cache
-C:\Users\lovel\source\repos\lasalle\fall 2022\420-CT2-AS\prjWinCsAllChapters\PrjConCsExercise2\obj\Debug\PrjConCsExercise2.csproj.CoreCompileInputs.cache
-C:\Users\lovel\source\repos\lasalle\fall 2022\420-CT2-AS\prjWinCsAllChapters\PrjConCsExercise2\obj\Debug\PrjConCsExercise2.exe
-C:\Users\lovel\source\repos\lasalle\fall 2022\420-CT2-AS\prjWinCsAllChapters\PrjConCsExercise2\obj\Debug\PrjConCsExercise2.pdb
